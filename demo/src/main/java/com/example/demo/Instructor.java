@@ -6,8 +6,9 @@ import java.util.*;
 
 public class Instructor extends Person implements Teacher {
 
+    public Instructor() {this(null, null);}
 
-    public Instructor(long id, String name) {
+    public Instructor(Long id, String name) {
         super(id, name);
     }
 

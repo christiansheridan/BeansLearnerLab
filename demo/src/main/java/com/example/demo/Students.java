@@ -4,20 +4,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
-public class Students extends People {
+public class Students extends People<Student> {
 
-    public Students(ArrayList<Student> personList) {
-        super(personList);
-    }
-
-    public Students(Student ... student){
-        super(student);
-    }
-
-
-    @Override
-    public Iterator<Student> iterator() {
-        return this.personList.iterator();
+    public Students(Student... students){
+        super(students);
     }
 
 }
